@@ -5,6 +5,6 @@ sudo apt install ssh -y
 sudo apt install vim-gnome -y
 sudo apt install shadowsocks -y
 
-sudo apt install python3 python3-distutils
-sudo apt install python3-pip
-sudo apt install make
+sudo apt install python3 python3-distutils -y
+sudo apt install python3-pip -y
+sudo apt install make -y
