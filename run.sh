@@ -1,5 +1,4 @@
 ./scripts/install.sh
-./scripts/vimrc.sh
 cp .vimrc ~/
 
 git config --global user.email "indestinee@gmail.com"

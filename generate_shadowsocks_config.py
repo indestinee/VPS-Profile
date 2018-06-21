@@ -1,4 +1,5 @@
 import os, json, random
+import numpy as np
 
 def random_str(n):
 	s = '1234567890qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM'
@@ -7,7 +8,7 @@ def random_str(n):
 
 data = {
     "server":"::",
-    "server_port":8388,
+    "server_port": np.random.randint(8888, 30000),
     "local_address": "127.0.0.1",
     "local_port":1080,
     "password":random_str(16),
@@ -19,6 +20,6 @@ data = {
 out = json.dumps(data)
 print(out)
 with open('/etc/shadowsocks/config.json', 'w') as f:
-	json.dump(data, f)
+    json.dump(data, f)
 
 
