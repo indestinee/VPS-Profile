@@ -10,4 +10,5 @@ sudo apt install zsh -y
 sudo apt install python3 python3-distutils -y
 sudo apt install python3-pip -y
 sudo apt install make -y
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 pip3 install --upgrade pip
